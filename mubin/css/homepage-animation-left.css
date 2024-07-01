@@ -1,0 +1,191 @@
+:root {
+  --wLF: 20vw;
+  --seconds: 2s;
+  --r: 19;
+  --g: 66;
+  --b: 96;
+} /* This is the EXPERIENCE section that holds the company name - 40VW */
+
+body {
+  overflow-x: hidden;
+}
+
+.r-nine {
+  position: relative;
+  height: auto;
+  width: var(--wLF);
+  overflow-x: hidden;
+}
+
+.box_r-nine {
+  position: relative;
+  height: auto;
+  width: var(--wLF);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .r-nine-animation {
+    animation: var(--seconds) slide-right forwards;
+  }
+}
+
+.r-eight {
+  position: relative;
+  width: var(--wLF);
+  height: auto;
+  overflow-x: hidden;
+}
+
+.box_r-eight {
+  position: relative;
+  height: auto;
+  width: var(--wLF);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .r-eight-animation {
+    animation: var(--seconds) slide-right forwards;
+  }
+}
+
+.r-seven {
+  position: relative;
+  width: var(--wLF);
+  height: auto;
+  overflow-x: hidden;
+}
+
+.box_r-seven {
+  position: relative;
+  height: auto;
+  width: var(--wLF);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .r-seven-animation {
+    animation: var(--seconds) slide-right forwards;
+  }
+}
+
+.r-six {
+  position: relative;
+  width: var(--wLF);
+  height: auto;
+  overflow-x: hidden;
+}
+
+.box_r-six {
+  position: relative;
+  height: auto;
+  width: var(--wLF);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .r-six-animation {
+    animation: var(--seconds) slide-right forwards;
+  }
+}
+
+.r-five {
+  position: relative;
+  width: var(--wLF);
+  height: auto;
+  overflow-x: hidden;
+}
+
+.box_r-five {
+  position: relative;
+  height: auto;
+  width: var(--wLF);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .r-five-animation {
+    animation: var(--seconds) slide-right forwards;
+  }
+}
+
+.r-four {
+  position: relative;
+  width: var(--wLF);
+  height: auto;
+  overflow-x: hidden;
+}
+
+.box_r-four {
+  position: relative;
+  height: auto;
+  width: var(--wLF);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .r-four-animation {
+    animation: var(--seconds) slide-right forwards;
+  }
+}
+
+.r-three {
+  position: relative;
+  width: var(--wLF);
+  height: auto;
+  overflow-x: hidden;
+}
+
+.box_r-three {
+  position: relative;
+  height: auto;
+  width: var(--wLF);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .r-three-animation {
+    animation: var(--seconds) slide-right forwards;
+  }
+}
+
+.r-two {
+  position: relative;
+  width: var(--wLF);
+  height: auto;
+  overflow-x: hidden;
+}
+
+.box_r-two {
+  position: relative;
+  height: auto;
+  width: var(--wLF);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .r-two-animation {
+    animation: var(--seconds) slide-right forwards;
+  }
+}
+
+.r-one {
+  position: relative;
+  height: auto;
+  width: var(--wLF);
+  overflow-x: hidden;
+}
+
+.box_r-one {
+  position: relative;
+  height: auto;
+  width: var(--wLF);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .r-one-animation {
+    animation: var(--seconds) slide-right forwards;
+  }
+}
+
+@keyframes slide-right {
+  from {
+    margin-right: 100%;
+  }
+  to {
+    margin-right: 0%;
+  }
+}

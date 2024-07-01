@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mubin's Page</title>
+    <link rel="stylesheet" href="../css/workout.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <style>
+      body {
+        /* background-image: url(../images/wallpaper.png); */
+        background-image: cross-fade();
+        background-position: center;
+      }
+    </style>
+    <div class="bodyFrame">
+      <section class="frame">
+        <div class="top-frame"></div>
+        <div class="left-frame"></div>
+
+        <div class="right-frame">
+          <div class="start-stop">
+            <label class="button-label"></label>
+            <button class="button-rr" id="start-button">START</button>
+            <button class="button-rr" id="stop-button">STOP</button>
+          </div>
+
+          <div class="tt-time">
+            <label class="total-rr-label">Total Workout Time</label>
+            <input type="text" class="total-time" id="clock-timer" />
+            <label class="total-rr-label">Section Time</label>
+            <input type="text" class="total-time" id="section-timer" />
+            <button class="button-rr rep-top" id="rep-button">REPS</button>
+            <button class="button-rr" id="rest-button">REST</button>
+          </div>
+
+          <div class="reps-rest">
+            <label class="total-rr-label">Exercise Graphs</label>
+            <div class="exercise-graphs">
+              <a href="../pages/workout-charts.html" target="_blank"
+                >Exercise Graphs</a
+              >
+            </div>
+          </div>
+
+          <div class="on-off">
+            <div class="exercise-metric">
+              <label class="total-rr-metric">Rest Overage</label>
+              <label class="total-rr-metric">On/Off Margins</label>
+            </div>
+
+            <div class="exercise-metric">
+              <input type="text" class="total-metric" id="overage-timer" />
+              <input type="text" class="total-metric" id="margin-timer" />
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="execise-info"></div> -->
+      </section>
+
+      <section class="under-body">
+        <section class="exercise-section">
+          <div class="top-exe-frame">
+            <nav class="two">
+              <div class="nav-container">
+                <div class="back-top">
+                  <a href="../index.html" class="back-link">BACK</a>
+                </div>
+                <div class="rest-value-panel">
+                  <div class="test-frame-one">
+                    <input
+                      type="text"
+                      name="restint"
+                      value="90"
+                      placeholder="Rest value (seconds)"
+                      class="rest-value"
+                      id="rest-interval-value"
+                    />
+                    <h2 class="interval-label">Rest Interval</h2>
+                  </div>
+
+                  <div class="test-frame">
+                    <input type="checkbox" class="test" />
+                    <h2 class="test-label">Test</h2>
+                  </div>
+                </div>
+
+                <div class="clock-panel">CLOCK CONTROLS</div>
+              </div>
+            </nav>
+          </div>
+
+          <div class="exercise-units">
+            <div class="exercise-number">
+              <img src="../images/e1.png" class="e-one-image" />
+            </div>
+            <div class="excersise-parent-block">
+              <!-- <div class="execise-border"></div> -->
+              <div class="exercise-block-spacer">
+                <div class="exercise-block">
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Exercise Name</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="exercise-name-one"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Weight (lbs)</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="exercise-weight-one"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Arm Position</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="exercise-position-one"
+                      />
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Reps 1</label>
+                      <input type="text" class="twxtbox" id="rep-one-one" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Reps 2</label>
+                      <input type="text" class="twxtbox" id="rep-two-one" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Reps 3</label>
+                      <input type="text" class="twxtbox" id="rep-three-one" />
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Rep Time 1</label>
+                      <input type="text" class="twxtbox" id="rep-one-a" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Rep Time 2</label>
+                      <input type="text" class="twxtbox" id="rep-one-b" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Rep Time 3</label>
+                      <input type="text" class="twxtbox" id="rep-one-c" />
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Rest Time 1</label>
+                      <input type="text" class="twxtbox" id="rest-one-a" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Rest Time 2</label>
+                      <input type="text" class="twxtbox" id="rest-one-b" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Rest Time 3</label>
+                      <input type="text" class="twxtbox" id="rest-one-c" />
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Total Rep Time</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="total-rep-time-one"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Ave. Rep Time</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="ave-rep-time-one"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <!-- <label class="label-name">Graph</label>
+                    <input type="text" class="twxtbox" id="graph"> -->
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Total Rest Time</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="total-rest-time-one"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Ave. Rest Time</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="ave-rest-time-one"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <!-- <label class="label-name">Table</label>
+                    <input type="text" class="twxtbox" id="table"> -->
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="exercise-units">
+            <div class="exercise-number">
+              <img src="../images/e2.png" class="e-one-image" />
+            </div>
+            <div class="excersise-parent-block">
+              <!-- <div class="execise-border"></div> -->
+              <div class="exercise-block-spacer">
+                <div class="exercise-block">
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Exercise Name</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="exercise-name-two"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Weight (lbs)</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="exercise-weight-two"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Arm Position</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="exercise-position-two"
+                      />
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Reps 1</label>
+                      <input type="text" class="twxtbox" id="rep-one-two" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Reps 2</label>
+                      <input type="text" class="twxtbox" id="rep-two-two" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Reps 3</label>
+                      <input type="text" class="twxtbox" id="rep-three-two" />
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Rep Time 1</label>
+                      <input type="text" class="twxtbox" id="rep-two-a" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Rep Time 2</label>
+                      <input type="text" class="twxtbox" id="rep-two-b" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Rep Time 3</label>
+                      <input type="text" class="twxtbox" id="rep-two-c" />
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Rest Time 1</label>
+                      <input type="text" class="twxtbox" id="rest-two-a" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Rest Time 2</label>
+                      <input type="text" class="twxtbox" id="rest-two-b" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Rest Time 3</label>
+                      <input type="text" class="twxtbox" id="rest-two-c" />
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Total Rep Time</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="total-rep-time-two"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Ave. Rep Time</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="ave-rep-time-two"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <!-- <label class="label-name">Graph</label>
+                    <input type="text" class="twxtbox" id="graph"> -->
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Total Rest Time</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="total-rest-time-two"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Ave. Rest Time</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="ave-rest-time-two"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <!-- <label class="label-name">Table</label>
+                    <input type="text" class="twxtbox" id="table"> -->
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="exercise-units">
+            <div class="exercise-number">
+              <img src="../images/e3.png" class="e-one-image" />
+            </div>
+            <div class="excersise-parent-block">
+              <!-- <div class="execise-border"></div> -->
+              <div class="exercise-block-spacer">
+                <div class="exercise-block">
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Exercise Name</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="exercise-name-three"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Weight (lbs)</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="exercise-weight-three"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Arm Position</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="exercise-position-three"
+                      />
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Reps 1</label>
+                      <input type="text" class="twxtbox" id="rep-one-three" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Reps 2</label>
+                      <input type="text" class="twxtbox" id="rep-two-three" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Reps 3</label>
+                      <input type="text" class="twxtbox" id="rep-three-three" />
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Rep Time 1</label>
+                      <input type="text" class="twxtbox" id="rep-three-a" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Rep Time 2</label>
+                      <input type="text" class="twxtbox" id="rep-three-b" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Rep Time 3</label>
+                      <input type="text" class="twxtbox" id="rep-three-c" />
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Rest Time 1</label>
+                      <input type="text" class="twxtbox" id="rest-three-a" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Rest Time 2</label>
+                      <input type="text" class="twxtbox" id="rest-three-b" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Rest Time 3</label>
+                      <input type="text" class="twxtbox" id="rest-three-c" />
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Total Rep Time</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="total-rep-time-three"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Ave. Rep Time</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="ave-rep-time-three"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <!-- <label class="label-name">Graph</label>
+                    <input type="text" class="twxtbox" id="graph"> -->
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Total Rest Time</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="total-rest-time-three"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Ave. Rest Time</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="ave-rest-time-three"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <!-- <label class="label-name">Table</label>
+                    <input type="text" class="twxtbox" id="table"> -->
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="exercise-units">
+            <div class="exercise-number">
+              <img src="../images/e4.png" class="e-one-image" />
+            </div>
+            <div class="excersise-parent-block">
+              <!-- <div class="execise-border"></div> -->
+              <div class="exercise-block-spacer">
+                <div class="exercise-block">
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Exercise Name</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="exercise-name-four"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Weight (lbs)</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="exercise-weight-four"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Arm Position</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="exercise-position-four"
+                      />
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Reps 1</label>
+                      <input type="text" class="twxtbox" id="rep-one-four" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Reps 2</label>
+                      <input type="text" class="twxtbox" id="rep-two-four" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Reps 3</label>
+                      <input type="text" class="twxtbox" id="rep-three-four" />
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Rep Time 1</label>
+                      <input type="text" class="twxtbox" id="rep-four-a" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Rep Time 2</label>
+                      <input type="text" class="twxtbox" id="rep-four-b" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Rep Time 3</label>
+                      <input type="text" class="twxtbox" id="rep-four-c" />
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Rest Time 1</label>
+                      <input type="text" class="twxtbox" id="rest-four-a" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Rest Time 2</label>
+                      <input type="text" class="twxtbox" id="rest-four-b" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Rest Time 3</label>
+                      <input type="text" class="twxtbox" id="rest-four-c" />
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Total Rep Time</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="total-rep-time-four"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Ave. Rep Time</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="ave-rep-time-four"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <!-- <label class="label-name">Graph</label>
+                    <input type="text" class="twxtbox" id="graph"> -->
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Total Rest Time</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="total-rest-time-four"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Ave. Rest Time</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="ave-rest-time-four"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <!-- <label class="label-name">Table</label>
+                    <input type="text" class="twxtbox" id="table"> -->
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="exercise-units">
+            <div class="exercise-number">
+              <img src="../images/e5.png" class="e-one-image" />
+            </div>
+            <div class="excersise-parent-block">
+              <!-- <div class="execise-border"></div> -->
+              <div class="exercise-block-spacer">
+                <div class="exercise-block">
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Exercise Name</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="exercise-name-five"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Weight (lbs)</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="exercise-weight-five"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Arm Position</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="exercise-position-five"
+                      />
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Reps 1</label>
+                      <input type="text" class="twxtbox" id="rep-one-five" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Reps 2</label>
+                      <input type="text" class="twxtbox" id="rep-two-five" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Reps 3</label>
+                      <input type="text" class="twxtbox" id="rep-three-five" />
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Rep Time 1</label>
+                      <input type="text" class="twxtbox" id="rep-five-a" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Rep Time 2</label>
+                      <input type="text" class="twxtbox" id="rep-five-b" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Rep Time 3</label>
+                      <input type="text" class="twxtbox" id="rep-five-c" />
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Rest Time 1</label>
+                      <input type="text" class="twxtbox" id="rest-five-a" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Rest Time 2</label>
+                      <input type="text" class="twxtbox" id="rest-five-b" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Rest Time 3</label>
+                      <input type="text" class="twxtbox" id="rest-five-c" />
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Total Rep Time</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="total-rep-time-five"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Ave. Rep Time</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="ave-rep-time-five"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <!-- <label class="label-name">Graph</label>
+                    <input type="text" class="twxtbox" id="graph"> -->
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Total Rest Time</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="total-rest-time-five"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Ave. Rest Time</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="ave-rest-time-five"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <!-- <label class="label-name">Table</label>
+                    <input type="text" class="twxtbox" id="table"> -->
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="exercise-units">
+            <div class="exercise-number">
+              <img src="../images/e6.png" class="e-one-image" />
+            </div>
+            <div class="excersise-parent-block">
+              <!-- <div class="execise-border"></div> -->
+              <div class="exercise-block-spacer">
+                <div class="exercise-block">
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Exercise Name</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="exercise-name-six"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Weight (lbs)</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="exercise-weight-six"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Arm Position</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="exercise-position-six"
+                      />
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Reps 1</label>
+                      <input type="text" class="twxtbox" id="rep-one-six" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Reps 2</label>
+                      <input type="text" class="twxtbox" id="rep-two-six" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Reps 3</label>
+                      <input type="text" class="twxtbox" id="rep-three-six" />
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Rep Time 1</label>
+                      <input type="text" class="twxtbox" id="rep-six-a" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Rep Time 2</label>
+                      <input type="text" class="twxtbox" id="rep-six-b" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Rep Time 3</label>
+                      <input type="text" class="twxtbox" id="rep-six-c" />
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Rest Time 1</label>
+                      <input type="text" class="twxtbox" id="rest-six-a" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Rest Time 2</label>
+                      <input type="text" class="twxtbox" id="rest-six-b" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Rest Time 3</label>
+                      <input type="text" class="twxtbox" id="rest-six-c" />
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Total Rep Time</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="total-rep-time-six"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Ave. Rep Time</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="ave-rep-time-six"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <!-- <label class="label-name">Graph</label>
+                    <input type="text" class="twxtbox" id="graph"> -->
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Total Rest Time</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="total-rest-time-six"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Ave. Rest Time</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="ave-rest-time-six"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <!-- <label class="label-name">Table</label>
+                    <input type="text" class="twxtbox" id="table"> -->
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="exercise-units">
+            <div class="exercise-number">
+              <img src="../images/e7.png" class="e-one-image" />
+            </div>
+            <div class="excersise-parent-block">
+              <!-- <div class="execise-border"></div> -->
+              <div class="exercise-block-spacer">
+                <div class="exercise-block">
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Exercise Name</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="exercise-name-seven"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Weight (lbs)</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="exercise-weight-seven"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Arm Position</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="exercise-position-seven"
+                      />
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Reps 1</label>
+                      <input type="text" class="twxtbox" id="rep-one-seven" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Reps 2</label>
+                      <input type="text" class="twxtbox" id="rep-two-seven" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Reps 3</label>
+                      <input type="text" class="twxtbox" id="rep-three-seven" />
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Rep Time 1</label>
+                      <input type="text" class="twxtbox" id="rep-seven-a" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Rep Time 2</label>
+                      <input type="text" class="twxtbox" id="rep-seven-b" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Rep Time 3</label>
+                      <input type="text" class="twxtbox" id="rep-seven-c" />
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Rest Time 1</label>
+                      <input type="text" class="twxtbox" id="rest-seven-a" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Rest Time 2</label>
+                      <input type="text" class="twxtbox" id="rest-seven-b" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Rest Time 3</label>
+                      <input type="text" class="twxtbox" id="rest-seven-c" />
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Total Rep Time</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="total-rep-time-seven"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Ave. Rep Time</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="ave-rep-time-seven"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <!-- <label class="label-name">Graph</label>
+                    <input type="text" class="twxtbox" id="graph"> -->
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Total Rest Time</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="total-rest-time-seven"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Ave. Rest Time</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="ave-rest-time-seven"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <!-- <label class="label-name">Table</label>
+                    <input type="text" class="twxtbox" id="table"> -->
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="exercise-units">
+            <div class="exercise-number">
+              <img src="../images/e8.png" class="e-one-image" />
+            </div>
+            <div class="excersise-parent-block">
+              <!-- <div class="execise-border"></div> -->
+              <div class="exercise-block-spacer">
+                <div class="exercise-block">
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Exercise Name</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="exercise-name-eight"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Weight (lbs)</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="exercise-weight-eight"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Arm Position</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="exercise-position-eight"
+                      />
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Reps 1</label>
+                      <input type="text" class="twxtbox" id="rep-one-eight" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Reps 2</label>
+                      <input type="text" class="twxtbox" id="rep-two-eight" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Reps 3</label>
+                      <input type="text" class="twxtbox" id="rep-three-eight" />
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Rep Time 1</label>
+                      <input type="text" class="twxtbox" id="rep-eight-a" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Rep Time 2</label>
+                      <input type="text" class="twxtbox" id="rep-eight-b" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Rep Time 3</label>
+                      <input type="text" class="twxtbox" id="rep-eight-c" />
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Rest Time 1</label>
+                      <input type="text" class="twxtbox" id="rest-eight-a" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Rest Time 2</label>
+                      <input type="text" class="twxtbox" id="rest-eight-b" />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Rest Time 3</label>
+                      <input type="text" class="twxtbox" id="rest-eight-c" />
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Total Rep Time</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="total-rep-time-eight"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Ave. Rep Time</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="ave-rep-time-eight"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <!-- <label class="label-name">Graph</label>
+                    <input type="text" class="twxtbox" id="graph"> -->
+                    </div>
+                  </form>
+
+                  <form class="exercise-row">
+                    <div class="execise-info">
+                      <label class="label-name">Total Rest Time</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="total-rest-time-eight"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <label class="label-name">Ave. Rest Time</label>
+                      <input
+                        type="text"
+                        class="twxtbox"
+                        id="ave-rest-time-eight"
+                      />
+                    </div>
+                    <div class="execise-info">
+                      <!-- <label class="label-name">Table</label>
+                    <input type="text" class="twxtbox" id="table"> -->
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <script src="../javascript/workout-timer.js"></script>
+      <script
+        type="text/javascript"
+        src="../javascript/workout-arrays.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="../javascript/workout-readdata.js"
+      ></script>
+      <script type="module" src="../javascript/workout-writedata.js"></script>
+      <script
+        type="text/javascript"
+        src="../javascript/workout-calculations.js"
+      ></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    </div>
+  </body>
+</html>

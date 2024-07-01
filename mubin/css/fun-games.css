@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.fun-games {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.horizontal {
+  width: auto;
+  height: auto;
+}
+
+.endpoints {
+  width: 10vw !important;
+}
+
+.siblings {
+  display: flex;
+  flex-direction: column; /* Set the direction to column for vertical alignment */
+  justify-content: center;
+  padding: 10px;
+}
+
+.vertical {
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+  margin: 5px 0; /* Vertical margin between divs */
+  text-align: center;
+}
+
+.games-one {
+  background-color: #f79696;
+  margin: 5px;
+  text-align: center;
+  width: 20vw;
+  height: 20vh;
+}
+
+.games-two {
+  background-color: #ffffff60;
+  margin: 5px;
+  text-align: center;
+  width: 50vw;
+  height: 20vh;
+}
+
+/* This is the the actual SUMMARY text*/
+.resume-summary {
+  font-size: 1.75em;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 500;
+  background-color: rgb(189, 189, 189);
+  color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-transform: uppercase;
+  /* transform: rotate(-3deg); */
+  margin-right: 40px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 1px hsla(0, 0%, 255%, 0.5);
+}
+
+img {
+  cursor: pointer;
+}
+
+p {
+  text-align: left;
+  font-size: 23px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-shadow: 1px 1px 1px hsla(0, 0%, 255%, 0.5);
+}

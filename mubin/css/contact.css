@@ -1,0 +1,13 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.vertical {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact {
+  font-size: 40px;
+}

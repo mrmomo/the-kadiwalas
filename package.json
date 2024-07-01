@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@datastax/astra-db-ts": "^1.1.0",
+    "xlsx": "^0.18.5"
+  }
+}

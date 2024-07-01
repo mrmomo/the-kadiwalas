@@ -1,0 +1,145 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.one {
+  z-index: 1000;
+  background-color: rgb(var(--pR), var(--pG), var(--pB));
+  width: 100vw;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+/* .two {
+  z-index: 999;
+  background-color: rgb(55, 72, 95);
+  width: 100vw;
+  position: relative;
+  right: 0;
+  top: 0;
+} */
+
+nav .nav-one {
+  display: table;
+  width: 100vw;
+  height: 50px;
+}
+
+/* nav .nav-two {
+  width: 100vw;
+  height: 1px;
+} */
+
+nav .tech-container img {
+  height: 30px;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+nav .tech-container {
+  display: flex;
+  align-items: center;
+  padding: 20pt;
+}
+
+nav .nav-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav h2 {
+  color: rgb(255, 255, 255);
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+
+nav .logo {
+  height: 50px;
+  margin-right: 10px;
+}
+
+nav .menu-container {
+  display: flex;
+  justify-content: center;
+  padding: 10pt;
+}
+
+nav .logo-container {
+  display: flex;
+  justify-content: right;
+  padding: 10pt;
+}
+
+nav .nav-link {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50vw;
+}
+
+nav .nav-links {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 20px 20px 30px 20px;
+  border-radius: 20px 20px 0 0;
+  font-size: 30px;
+  background-color: rgb(var(--r), var(--g), var(--b));
+  color: rgb(255, 255, 255);
+  margin-bottom: -10px;
+  border-top: 1px solid white;
+}
+
+nav .nav-links:hover {
+  color: rgb(0, 0, 0);
+  background-color: aliceblue;
+}
+
+nav .menu {
+  display: none;
+}
+
+nav .list-container .nav-link {
+  display: block;
+  display: flex;
+  justify-content: center;
+}
+
+nav .menu-logo {
+  height: 30px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media (max-width: 1000px) {
+  nav h2 {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  nav .menu {
+    display: block;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 30px;
+  }
+  .menu-container .nav-link {
+    display: none;
+  }
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+  border-color: lightcoral;
+}

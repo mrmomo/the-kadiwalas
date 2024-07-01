@@ -1,0 +1,188 @@
+:root {
+  --wLR: 60vw;
+  --seconds: 2s;
+} /* This is the EXPERIENCE section that holds the company name - 40VW */
+
+body {
+  overflow-x: hidden;
+}
+
+.ii {
+  position: relative;
+  height: auto;
+  width: var(--wLR);
+  overflow-x: hidden;
+}
+
+.box_ii {
+  position: relative;
+  height: auto;
+  width: var(--wLR);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .ii-animation {
+    animation: var(--seconds) slide-left forwards;
+  }
+}
+
+.hh {
+  position: relative;
+  height: auto;
+  width: var(--wLR);
+  overflow-x: hidden;
+}
+
+.box_hh {
+  position: relative;
+  height: auto;
+  width: var(--wLR);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hh-animation {
+    animation: var(--seconds) slide-left forwards;
+  }
+}
+
+.gg {
+  position: relative;
+  height: auto;
+  width: 6var (--wLR);
+  overflow-x: hidden;
+}
+
+.box_gg {
+  position: relative;
+  height: auto;
+  width: var(--wLR);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .gg-animation {
+    animation: var(--seconds) slide-left forwards;
+  }
+}
+
+.ff {
+  position: relative;
+  height: auto;
+  width: var(--wLR);
+  overflow-x: hidden;
+}
+
+.box_ff {
+  position: relative;
+  height: auto;
+  width: var(--wLR);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .ff-animation {
+    animation: var(--seconds) slide-left forwards;
+  }
+}
+
+.ee {
+  position: relative;
+  height: auto;
+  width: var(--wLR);
+  overflow-x: hidden;
+}
+
+.box_ee {
+  position: relative;
+  height: auto;
+  width: var(--wLR);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .ee-animation {
+    animation: var(--seconds) slide-left forwards;
+  }
+}
+
+.dd {
+  position: relative;
+  height: auto;
+  width: var(--wLR);
+  overflow-x: hidden;
+}
+
+.box_dd {
+  position: relative;
+  height: auto;
+  width: var(--wLR);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .dd-animation {
+    animation: var(--seconds) slide-left forwards;
+  }
+}
+
+.cc {
+  position: relative;
+  height: auto;
+  width: var(--wLR);
+  overflow-x: hidden;
+}
+
+.box_cc {
+  position: relative;
+  height: auto;
+  width: var(--wLR);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .cc-animation {
+    animation: var(--seconds) slide-left forwards;
+  }
+}
+
+.bb {
+  position: relative;
+  height: auto;
+  width: var(--wLR);
+  overflow-x: hidden;
+}
+
+.box_bb {
+  position: relative;
+  height: auto;
+  width: var(--wLR);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .bb-animation {
+    animation: var(--seconds) slide-left forwards;
+  }
+}
+
+.aa {
+  position: relative;
+  height: auto;
+  width: var(--wLR);
+  overflow-x: hidden;
+}
+
+.box_aa {
+  position: relative;
+  height: auto;
+  width: var(--wLR);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .aa-animation {
+    animation: var(--seconds) slide-left forwards;
+  }
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
